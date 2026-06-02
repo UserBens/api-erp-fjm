@@ -9,7 +9,8 @@ class PegawaiController
     public function index()
     {
         return response()->json(
-            Pegawai::limit(10)->get()
+            Pegawai::get()
+            // Pegawai::limit(5)->get()
         );
     }
 }
