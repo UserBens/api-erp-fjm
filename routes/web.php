@@ -10,5 +10,5 @@ Route::get('/', function () {
 });
 
 Route::get('/api/pegawai', [PegawaiController::class, 'index']);
-Route::get('/api/salary', [SalaryMstController::class, 'index']);
+Route::get('/api/salary/{periode?}', [SalaryMstController::class, 'index']);
 Route::get('/api/kelompok-tenaga', [KelompokTenagaController::class, 'index']);
