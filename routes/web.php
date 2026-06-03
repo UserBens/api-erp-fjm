@@ -8,7 +8,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/api/pegawai', [PegawaiController::class, 'index']);
-Route::get('/api/salary/{periode?}', [SalaryMstController::class, 'index']);
-Route::get('/api/kelompok-tenaga', [KelompokTenagaController::class, 'index']);
