@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\KelompokTenagaController;
+use App\Http\Controllers\KualifikasiController;
 use App\Http\Controllers\LokasiKerjaController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PengawasController;
@@ -18,6 +19,7 @@ Route::middleware(['apikey'])->group(function () {
     Route::get('/pengawas-pekerjaan', [PengawasController::class, 'indexPengawasPekerjaan']); // BARU
     Route::get('/lokasi-kerja', [LokasiKerjaController::class, 'indexLokasiKerja']); // BARU
     Route::get('/lokasi-kerja-subkon', [LokasiKerjaController::class, 'indexLokasiKerjaSubkon']); // BARU
+    Route::get('/kualifikasi', [KualifikasiController::class, 'indexKualifikasi']); // BARU
 
 
     Route::get('/salary-mst/{periode?}', [SalaryMstController::class, 'index']);
